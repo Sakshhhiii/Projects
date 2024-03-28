@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.controls button, .controls input[type="number"], .controls input[type="color"] {
+    margin-right: 10px;
+}
+
+.text {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
